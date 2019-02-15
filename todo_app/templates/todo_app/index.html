@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'todo_app/base.html'%}
+
+{% block content %}
+
+<div class="container">
+    <div class="'row">
+        <div class="col-sm-12">
+
+        <h3>What is ToDo App ?</h3>
+
+        <p>This is a really simple app which lives on a django website ;)<br>
+
+        <h3>What can you do?</h3>
+        <p> - add a new tasks<br>
+            - mark them as an completed (nothing better than a view of all tasks done !)<br>
+            - delete completed tasks<br>
+            - delete all tasks</p>
+
+            <h3>If you are ready for being more organized <a class="ml-2" href="{%url 'login'%}">Sign In</a></h3>
+         <h3>If you don't have account yet <a class="ml-2" href="{%url 'register'%}">Sign Up</a></h3>
+        </div>
+    </div>
+</div>
+
+
+{%endblock content %}

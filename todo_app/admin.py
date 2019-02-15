@@ -1,0 +1,8 @@
+from django.contrib import admin
+from .models import TodoList
+from users.models import Profile
+# Register your models here.
+
+admin.site.register(TodoList)
+admin.site.register(Profile)
+
