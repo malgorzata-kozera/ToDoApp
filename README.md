@@ -8,7 +8,7 @@ And by the way I really like to be well organized, so making this app was a real
 -	Python/Django
 -	HTML5/CSS/Bootstrap4
 
-What can you do:
+## What can you do:
 - add a new tasks
 - mark them as an completed (nothing better than a view of all tasks done !)
 - delete completed tasks
