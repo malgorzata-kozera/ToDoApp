@@ -1,4 +1,4 @@
-# Visited Countries Map Creator
+# ToDo App
 
 Here you can create your personalized tasks list.
 
