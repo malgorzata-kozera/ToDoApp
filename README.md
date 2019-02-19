@@ -6,12 +6,12 @@ Here you can create your personalized tasks list.
 -	Python/Django
 -	HTML5/CSS/Bootstrap4
 
-## What you can do:
+## What can you do:
+- register a new User
 - add a new tasks
 - mark them as an completed (nothing better than a view of all tasks done !)
 - delete completed tasks
 - delete all tasks
-- register a new User
 
 
 ## How does it look like
