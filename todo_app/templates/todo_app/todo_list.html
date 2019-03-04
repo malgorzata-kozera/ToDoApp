@@ -13,7 +13,7 @@
                 <ul class="list-group">
                     {%for one_task in tasks_list %}
                         {% if one_task.complete %}
-                            <li class="list-group-item task-completed">{{one_task}} completed</li>
+                    <li class="list-group-item task-completed"><a href="{% url 'uncompleted' one_task.id %}">{{one_task}} completed</a></li>
 
                         {% else %}
 

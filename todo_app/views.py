@@ -44,7 +44,18 @@ def add_new_task(request):
 def task_done(request, one_task_id):
 
     one_task = TodoList.objects.get(pk=one_task_id)
+
     one_task.complete = True
+    one_task.save()
+    return redirect('todo-list')
+
+# view which changes selected task as an uncompleted
+@login_required
+def task_undone(request, one_task_id):
+
+    one_task = TodoList.objects.get(pk=one_task_id)
+
+    one_task.complete = False
     one_task.save()
     return redirect('todo-list')
 
