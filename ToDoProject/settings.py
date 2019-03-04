@@ -25,12 +25,8 @@ SECRET_KEY = '^mm=&*fs=1(#6*c-%3m8hgzc$y91-y(h@&$s-5#44&=l1yd!#('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['tasks-list-app.herokuapp.com/']
-=======
-ALLOWED_HOSTS = ['tasks-list-app.herokuapp.com']
->>>>>>> 56c34b3f471eb2dd9868787ae11f02cb229f6d74
 
+ALLOWED_HOSTS = ['tasks-list-app.herokuapp.com/']
 
 # Application definition
 
