@@ -16,5 +16,6 @@ Here you can create your personalized tasks list.
 
 ## How does it look like
 
-![sc1](https://user-images.githubusercontent.com/47001087/53025658-97841a80-3461-11e9-9975-86b3fe3c5f1a.png)
-![cs2](https://user-images.githubusercontent.com/47001087/53025652-9652ed80-3461-11e9-937d-3d23353934ff.png)
+![sc1](https://user-images.githubusercontent.com/47001087/53736735-e3d05100-3e8a-11e9-8ea1-626e296e15bd.png)
+![sc2](https://user-images.githubusercontent.com/47001087/53736736-e5017e00-3e8a-11e9-8fdc-15bbac05678d.png)
+
