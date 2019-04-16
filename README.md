@@ -15,9 +15,9 @@ And by the way I really like to be well organized, so making this app was a real
 -	HTML5/CSS/Bootstrap4
 
 ## What can you do:
-<<<<<<< HEAD
+
 - register a new User
-=======
+
 
 - add a new tasks
 - mark them as an completed (nothing better than a view of all tasks done !)
@@ -30,7 +30,7 @@ And by the way I really like to be well organized, so making this app was a real
 
 ![sc1](https://user-images.githubusercontent.com/47001087/53025658-97841a80-3461-11e9-9975-86b3fe3c5f1a.png)
 ![cs2](https://user-images.githubusercontent.com/47001087/53025652-9652ed80-3461-11e9-937d-3d23353934ff.png)
-=======
+
 - create your own user
 - update your profile
 - reset the password
