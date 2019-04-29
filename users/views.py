@@ -32,7 +32,7 @@ def profile_site(request):
         update_form = UserUpdateForm(request.POST, instance=request.user)
         if update_form.is_valid():
             update_form.save()
-            messages.success(request, f'Your profile has benn update')
+            messages.success(request, f'Your profile has been update')
             return redirect('profile')
 
     else:
