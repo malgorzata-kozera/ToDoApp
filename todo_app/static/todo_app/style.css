@@ -1,9 +1,8 @@
 body{
 /* Background pattern from Toptal Subtle Patterns */
 background-image: url("img/bg.png");
-background-size:100% auto;
+background-size:cover;
 background-repeat: no-repeat;
-min-height: 100%;
 }
 
 html {
