@@ -13,7 +13,6 @@ background-image: url("img/bg.png")
 }
 /* settings for update data form in profile template */
 .form-user-content{
- padding-top: 20px;
  padding-right: 30px;
  padding-left: 80px;
  border: 2px solid #20B2AA;
