@@ -5,19 +5,9 @@ background-size: cover;
 background-repeat: no-repeat;
 }
 
-/* Change background image on mobile view*/
-@media (max-width: 767px) {
-  .fl-builder-content .ss-changeme > .fl-row-content-wrap  {
-    background-image:url("img/bg.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-  .fl-builder-content .ss-changeme .fl-bg-video {
-      display: none;
-      visibility: hidden;
-  }
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	background: url("img/bg.png") no-repeat center center fixed;
 }
-
 
 /*message*/
 
