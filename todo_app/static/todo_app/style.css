@@ -3,8 +3,22 @@ body{
 background-image: url("img/bg.png");
 background-size: cover;
 background-repeat: no-repeat;
-margin-top: 5rem;
 }
+
+/* Change background image on mobile view*/
+@media (max-width: 767px) {
+  .fl-builder-content .ss-changeme > .fl-row-content-wrap  {
+    background-image:url("img/bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .fl-builder-content .ss-changeme .fl-bg-video {
+      display: none;
+      visibility: hidden;
+  }
+}
+
+
 /*message*/
 
 .message-content{
