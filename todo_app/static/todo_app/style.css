@@ -1,20 +1,22 @@
 body{
 /* Background pattern from Toptal Subtle Patterns */
-background-image: url("img/bg.png")
+background-image: url("img/bg.png");
+text-alaign:center;
 
 }
 
 .message-content{
  padding-top: 20px;
- padding-right: 30px;
+ padding-right: 20px;
  padding-left: 40px;
  font-size: 20px;
 
 }
 /* settings for update data form in profile template */
 .form-user-content{
- padding-right: 30px;
- padding-left: 80px;
+ padding-top: 20px;
+ padding-right: 20px;
+ padding-left: 20px;
  border: 2px solid #20B2AA;
  border-radius: 25px;
 }
