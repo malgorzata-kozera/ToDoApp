@@ -15,6 +15,7 @@
 <body>
 
 <!--Navbar start-->
+  <header class="site-header">
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: 	#20B2AA;">
   <a class="navbar-brand" href="{% url 'index'%}">ToDo App</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,12 +56,15 @@
   </div>
 
 </nav>
+</header>
 
 <!--Navbar end-->
 <!--messages container-->
-    <div class="message-content">
+ <main role="main" class="container">
+
         <div class="row">
         <div class="col-md-8">
+            <div class="message-content">
         {%if messages %}
             {%for message in messages %}
                 <div class="alert-{{message.tags}}">{{message}}</div>
@@ -69,6 +73,7 @@
         </div>
         </div>
     </div>
+ </main>
 <!--messages container end -->
 
          {% block content %}{% endblock %}
