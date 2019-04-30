@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['tasks-list-app.herokuapp.com/']
+ALLOWED_HOSTS = ['tasks-list-app.herokuapp.com/', '.herokuapp.com']
 
 # Application definition
 
