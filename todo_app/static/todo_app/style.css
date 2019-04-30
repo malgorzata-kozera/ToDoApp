@@ -5,14 +5,13 @@ background-size:cover;
 background-repeat: no-repeat;
 }
 
-
 .html-mobile-background {
     position: fixed;
     z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* To compensate for mobile browser address bar space */
+    height: 100%;
     background: url("img/bg.png") no-repeat;
  center center fixed;
 -webkit-background-size: cover;
@@ -37,6 +36,7 @@ background-size: cover;
  padding-top: 20px;
  padding-right: 20px;
  padding-left: 20px;
+ padding-bottom: 20px;
  border: 2px solid #20B2AA;
  border-radius: 25px;
 
