@@ -67,6 +67,8 @@ def delete_task(request):
     done_task.delete()
     messages.success(request, 'Your completed tasks have been removed')
     return redirect('todo-list')
+def delete_taks_just_added(request):
+    pass
 
 
 @login_required
@@ -76,3 +78,5 @@ def delete_all_tasks(request):
     all_tasks.delete()
     messages.success(request, 'Your all tasks have been removed')
     return redirect('todo-list')
+
+
