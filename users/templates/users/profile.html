@@ -4,30 +4,26 @@
 
 {% block content %}
 
-<div class="container">
-    <div class ="row"></div>
+<h2 class="account-heading">User profile: {{user.username}} </h2>
 
-            <h2 class="account-heading">User profile: {{user.username}} </h2>
+<p>User email: {{user.email}}</p>
 
-                <p>User email: {{user.email}}</p>
+<div class="form-user-content">
 
-       <div class="form-user-content">
+    <form method="POST">
+        {% csrf_token %}
 
-            <form method="POST">
-                {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Update your data</legend>
 
-                <fieldset class="form-group">
-                    <legend class="border-bottom mb-4">Update your data</legend>
+                {{ update_form|crispy}}
 
-                        {{ update_form|crispy}}
+         </fieldset>
 
-                 </fieldset>
-
-                    <div class="form-group">
-                        <button  class="btn btn-outline-info" type="submit">Update</button>
-                    </div>
-            </form>
-       </div>
-    </div>
+            <div class="form-group">
+                <button  class="btn btn-outline-info" type="submit">Update</button>
+            </div>
+    </form>
+</div>
 
 {%endblock content %}
