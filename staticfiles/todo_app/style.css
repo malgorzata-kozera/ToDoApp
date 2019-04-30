@@ -1,33 +1,29 @@
 body{
 /* Background pattern from Toptal Subtle Patterns */
-background-image: url("img/bg.png")
-
-}
-
-.container{
-
- margin-top: 60px;
- margin-bottom: 20px;
- margin-right: 150px;
- margin-left: 80px;
-
+background-image: url("img/bg.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
 .message-content{
  padding-top: 20px;
- padding-right: 30px;
- padding-left: 40px;
+ padding-right: 20px;
+ padding-left: 20px;
  font-size: 20px;
 
 }
 /* settings for update data form in profile template */
 .form-user-content{
  padding-top: 20px;
- padding-right: 30px;
- padding-left: 80px;
+ padding-right: 20px;
+ padding-left: 20px;
  border: 2px solid #20B2AA;
  border-radius: 25px;
+
 }
+
+
 /*change view of tasks if they are completed */
 .task-completed{
 	background: #40D99B;

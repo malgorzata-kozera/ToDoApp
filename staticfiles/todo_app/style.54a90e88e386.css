@@ -1,11 +1,10 @@
 body{
 /* Background pattern from Toptal Subtle Patterns */
-background-image: url("img/bg.png");
+background-image: url("img/bg.0519c2a5023f.png");
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 }
-/*message*/
 
 .message-content{
  padding-top: 20px;
@@ -14,7 +13,7 @@ background-attachment: fixed;
  font-size: 20px;
 
 }
-/* settings for all forms content */
+/* settings for update data form in profile template */
 .form-user-content{
  padding-top: 20px;
  padding-right: 20px;
