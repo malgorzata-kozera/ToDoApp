@@ -21,7 +21,6 @@ background-size: cover;
  background-size: 100% 100%
 }
 
-
 /*message*/
 
 .message-content{
@@ -43,10 +42,10 @@ background-size: cover;
 
 }
 
-
 /*change view of tasks if they are completed */
 .task-completed{
 	background: #40D99B;
+	width:auto;
 }
 .task-completed:before {
     content: '✓ ';
@@ -55,4 +54,35 @@ background-size: cover;
 .list-group-item a {
   color: black;
   text-decoration: none;
+}
+
+
+li{
+
+max-width: 100%;
+min-width: 100%;
+ -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+}
+
+
+#leftlist{
+
+   float:left;
+}
+#rightlist{
+
+   float:right;
+
+}
+
+.form-content{
+width:100%;
+}
+
+.buttons{
+
+margin-bottom: 20px;
+
 }

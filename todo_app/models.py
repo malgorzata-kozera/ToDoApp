@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 
 class TodoList(models.Model):
 
-    task = models.CharField(max_length=300)
+    task = models.CharField(max_length=75)
 
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 

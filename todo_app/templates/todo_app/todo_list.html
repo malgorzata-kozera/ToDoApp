@@ -16,8 +16,15 @@
                     <li class="list-group-item task-completed"><a href="{% url 'uncompleted' one_task.id %}">{{one_task}} completed</a></li>
 
                         {% else %}
+                            <li class="list-group-item ">
 
-                            <li class="list-group-item "><a href="{% url 'complete' one_task.id %}">{{one_task}}</a></li>
+                                 <div id="leftlist">
+                                <a href="{% url 'complete' one_task.id %}">{{one_task}}</a>
+                                 </div>
+                                <div id="rightlist">
+                               <a style="color: black;" class="fas fa-trash" href="{% url 'delete-task' one_task.id %}"></a>
+                                </div>
+                            </li>
 
                         {% endif %}
                     {% endfor %}
@@ -33,7 +40,10 @@
                         <fieldset class="form-group">
                             <legend class="border-bottom mb-4">Make your own Todo List</legend>
 
+                            <div class="form-content">
                                 {{ form|crispy}}
+
+                                </div>
 
                         </fieldset>
 

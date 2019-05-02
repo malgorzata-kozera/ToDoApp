@@ -12,7 +12,7 @@ def index(request):
 
     return render(request, 'todo_app/index.html')
 
-# decorator which makes that user can see this views only when he is login
+# decorator which makes that user can see this views only when he is logged in
 
 
 @login_required
@@ -39,6 +39,7 @@ def add_new_task(request):
         new_task.save()
         return redirect('todo-list')
 
+
 # view which changes selected task as an completed
 @login_required
 def task_done(request, one_task_id):
@@ -48,6 +49,7 @@ def task_done(request, one_task_id):
     one_task.complete = True
     one_task.save()
     return redirect('todo-list')
+
 
 # view which changes selected task as an uncompleted
 @login_required
@@ -61,14 +63,20 @@ def task_undone(request, one_task_id):
 
 
 @login_required
-def delete_task(request):
+def delete_completed_tasks(request):
     user = request.user
-    done_task = TodoList.objects.filter(complete=True, author=user)
-    done_task.delete()
+    done_tasks = TodoList.objects.filter(complete=True, author=user)
+    done_tasks.delete()
     messages.success(request, 'Your completed tasks have been removed')
     return redirect('todo-list')
-def delete_taks_just_added(request):
-    pass
+
+# view which changes selected task as an uncompleted
+def delete_task(request, one_task_id):
+
+    task = TodoList.objects.get(pk=one_task_id)
+    task.delete()
+    messages.success(request, 'Your task has been removed')
+    return redirect('todo-list')
 
 
 @login_required
@@ -78,5 +86,3 @@ def delete_all_tasks(request):
     all_tasks.delete()
     messages.success(request, 'Your all tasks have been removed')
     return redirect('todo-list')
-
-
