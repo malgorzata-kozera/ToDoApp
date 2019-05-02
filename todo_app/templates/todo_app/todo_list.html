@@ -13,16 +13,20 @@
                 <ul class="list-group">
                     {%for one_task in tasks_list %}
                         {% if one_task.complete %}
-                    <li class="list-group-item task-completed"><a href="{% url 'uncompleted' one_task.id %}">{{one_task}} completed</a></li>
+
+                            <li class="list-group-item task-completed">
+                                <a href="{% url 'uncompleted' one_task.id %}">{{one_task}} completed</a>
+                            </li>
 
                         {% else %}
+
                             <li class="list-group-item ">
 
                                  <div id="leftlist">
-                                <a href="{% url 'complete' one_task.id %}">{{one_task}}</a>
+                                    <a href="{% url 'complete' one_task.id %}">{{one_task}}</a>
                                  </div>
                                 <div id="rightlist">
-                               <a style="color: black;" class="fas fa-trash" href="{% url 'delete-task' one_task.id %}"></a>
+                                    <a style="color: black;" class="fas fa-trash" href="{% url 'delete-task' one_task.id %}"></a>
                                 </div>
                             </li>
 
@@ -31,6 +35,7 @@
                 </ul>
             </div>
         </div>
+
         <!--form container -->
       <div class="col-md-4">
            <div class="form-content">
@@ -41,31 +46,27 @@
                             <legend class="border-bottom mb-4">Make your own Todo List</legend>
 
                             <div class="form-content">
+
                                 {{ form|crispy}}
 
-                                </div>
+                            </div>
 
                         </fieldset>
 
-                <div align="center" class="form-group">
-                    <button  class="btn btn-outline-info" type="submit">Add New Task</button>
-                </div>
+                        <div align="center" class="form-group">
+                            <button  class="btn btn-outline-info" type="submit">Add New Task</button>
+                        </div>
 
-                      </form>
+                    </form>
                 </div>
-
                     <div align="center" class="buttons">
-
                         <div class="btn-group-vertical">
-
                             <a href ="{% url 'delete-all' %} ">
                                 <button class="btn btn-outline-warning mb-3" type="submit">Delete all tasks</button>
                             </a>
-
                             <a href ="{% url 'delete-done' %} ">
                                 <button class="btn btn-outline-warning" type="submit">Delete completed tasks</button>
                             </a>
-
                     </div>
                 </div>
             </div>
