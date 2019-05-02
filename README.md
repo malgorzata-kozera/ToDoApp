@@ -4,10 +4,10 @@
 
 Here you can create your personalized tasks list.
 =======
-Here you can create your personalized tasks list. 
 I made this app as part of the exercises, I wanted to improve my skills in django and python in general,
 because there is still a lot of things that can be done better :) 
 And by the way I really like to be well organized, so making this app was a real pleasure for me :) 
+Check it out [here](https://tasks-list-app.herokuapp.com).
 
 
 ## Technology Stack:
